@@ -12,12 +12,12 @@ export class AuthController {
   register(@Body() registerDto : RegisterDto){
     return this.authService.register(registerDto)
   }
-/*
+
   @Post('login')
   login(@Body() loginDto : LoginDto){
-    return this.authService.login({loginDto});
+    return this.authService.login(loginDto);
   }
-*/
+
   @Get('home')
   getHome(){
     return "entramos al Home";
